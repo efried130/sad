@@ -1,5 +1,5 @@
 # Stage 0 - Create from julia image and install OS packages
-FROM julia:latest as stage0
+FROM julia:1.11.6 as stage0
 RUN apt update && apt -y install bzip2 build-essential libxml2
 
 # STAGE 1 - Python and python packages for S3 functionality
